@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+*.egg-info/
+.DS_Store
+.vscode/
+.idea/
+
+# Raw dataset is large (~420k rows) - fetched by the setup script instead of committed
+raw_data.csv

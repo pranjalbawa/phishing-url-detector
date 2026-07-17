@@ -1,0 +1,47 @@
+{
+  "accuracy": 0.8844375,
+  "precision": 0.8987423829897575,
+  "recall": 0.8665,
+  "f1_score": 0.8823267358238401,
+  "confusion_matrix": [
+    [
+      7219,
+      781
+    ],
+    [
+      1068,
+      6932
+    ]
+  ],
+  "n_train": 64000,
+  "n_test": 16000,
+  "feature_importances": {
+    "tld_length": 0.1905000199108783,
+    "num_hyphens": 0.09188597606410029,
+    "num_digits": 0.09181155385496127,
+    "path_length": 0.08936896289246878,
+    "suspicious_word_count": 0.07817849198627592,
+    "num_slashes": 0.05733634597658176,
+    "num_dots": 0.0547781313678524,
+    "digit_ratio": 0.05344002876873962,
+    "url_entropy": 0.04832099366933382,
+    "url_length": 0.04376623033751939,
+    "host_length": 0.04249839080540888,
+    "num_underscores": 0.03857037294899123,
+    "domain_entropy": 0.03393950634300847,
+    "subdomain_count": 0.021124174713953038,
+    "num_params": 0.011721933031085145,
+    "num_equals": 0.010884650103916794,
+    "num_query_components": 0.008881035291488277,
+    "hyphen_in_host": 0.008707784315642153,
+    "has_ip_address": 0.00670785185751213,
+    "suspicious_tld": 0.005900587961801772,
+    "num_ampersand": 0.003105588364926039,
+    "is_shortened": 0.0028109751198786936,
+    "num_at_symbol": 0.0024770150570778164,
+    "num_percent": 0.0022360386561163163,
+    "has_port": 0.0010275117019513439,
+    "https_in_path": 1.984889853032067e-05,
+    "has_https": 0.0
+  }
+}

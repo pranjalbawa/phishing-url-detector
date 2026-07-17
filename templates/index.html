@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing URL Detector</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <span class="brand-icon">&#128737;</span>
+        <div>
+          <h1>Phishing URL Detector</h1>
+          <p class="subtitle">Real-time URL risk analysis powered by machine learning</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="analyzer-card">
+        <form id="analyze-form">
+          <label for="url-input">Enter a URL to analyze</label>
+          <div class="input-row">
+            <input
+              type="text"
+              id="url-input"
+              name="url"
+              placeholder="e.g. paypal-secure-login.verify-account.tk"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" id="analyze-btn">Analyze</button>
+          </div>
+        </form>
+
+        <div id="loading" class="loading hidden">
+          <div class="spinner"></div>
+          <span>Analyzing URL...</span>
+        </div>
+
+        <div id="result" class="result hidden"></div>
+        <div id="error" class="error hidden"></div>
+      </section>
+
+      <section class="info-card">
+        <h2>How it works</h2>
+        <p>
+          The model extracts ~26 lexical and structural features directly from the URL text
+          &mdash; length, special-character counts, domain entropy, suspicious keywords,
+          IP-literal hosts, URL shorteners, and more &mdash; then a Random Forest classifier
+          estimates the probability that the URL is a phishing attempt. No page content is
+          fetched, so results are instant and safe to run on untrusted links.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with Flask &amp; scikit-learn &middot; For educational / demo purposes only</p>
+    </footer>
+  </div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
