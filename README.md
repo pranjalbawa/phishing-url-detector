@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Phishing URL Detection Website
 
 A Flask web application that uses a machine learning classifier to detect phishing URLs in real time. Enter any URL and get an instant risk score, verdict, and a breakdown of the specific signals that drove the prediction — all without fetching the destination page, so it's safe to check untrusted links.
@@ -107,3 +108,6 @@ This project is for **educational and demonstration purposes**. It is a lexical/
 ## License
 
 MIT
+=======
+# phishing-url-detector
+>>>>>>> cbadb925cf89aebd640f39249d61b9ed46f82c9f
